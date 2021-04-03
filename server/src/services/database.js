@@ -6,10 +6,10 @@ const Mysql = require('mysql2')
  * @returns none
  */
 const Connection = Mysql.createConnection({
-    host: process.env.HOST || 'localhost',
-    database: process.env.DATABASE || 'pinatas_nino_feliz',
-    user: process.env.USER || 'nodejs_server',
-    password: process.env.PASSWORD || 'NodeJs_2021',
+    host: /*process.env.HOST ||*/ 'localhost',
+    database: /*process.env.DATABASE ||*/ 'pinatas_nino_feliz',
+    user: /*process.env.USER ||*/ 'nodejs_server',
+    password: /*process.env.PASSWORD ||*/ 'NodeJs_2021',
 })
 
 Connection.connect(err => {

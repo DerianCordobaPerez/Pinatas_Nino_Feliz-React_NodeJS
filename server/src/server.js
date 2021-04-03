@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 10000
 
 //settings
 app.set('port', port)
@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: false }))
 //global variables
 
 //routes
+require('./routes/pinata.routes')(app)
 
 //static files
 
